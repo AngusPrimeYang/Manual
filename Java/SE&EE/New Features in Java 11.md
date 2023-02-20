@@ -1,22 +1,46 @@
-h3. 目前EOS進程
+### 目前EOS進程
 
-|_.Version|_.Release|_.Active Support|_.Security Support|
-| 8 | 18 Mar 2014 | 31 Mar 2022 | 31 Dec 2030 |
-| 11 | 25 Sep 2018 | 30 Sep 2023 | 30 Sep 2026 |
-| 17 | 14 Sep 2021 | 30 Sep 2026 | 30 Sep 2029 |
+<table>
+<tbody>
+	<tr data-sort-method="none">
+		<th role="columnheader">Version</th>
+		<th role="columnheader">Release</th>
+		<th role="columnheader">Active Support</th>
+		<th role="columnheader">Security Support</th>
+	</tr>
+	<tr>
+		<td> 8 </td>
+		<td> 18 Mar 2014 </td>
+		<td> 31 Mar 2022 </td>
+		<td> 31 Dec 2030 </td>
+	</tr>
+	<tr>
+		<td> 11 </td>
+		<td> 25 Sep 2018 </td>
+		<td> 30 Sep 2023 </td>
+		<td> 30 Sep 2026 </td>
+	</tr>
+	<tr>
+		<td> 17 </td>
+		<td> 14 Sep 2021 </td>
+		<td> 30 Sep 2026 </td>
+		<td> 30 Sep 2029 </td>
+	</tr>
+</tbody>
+</table>
 
 https://endoflife.date/java
 
-java將issue命名為JDK Enhancement Proposals(JEPs)，各issue正式表示方法如JEP-181，
-可以對應到文件https://openjdk.org/jeps/181，確認詳細說明
-以下為列表及簡易說明
-跟一般工程師撰寫比較有關的部分，將以 *粗體* 表示
-*整體來看，JAVA 9, 10, 11是最大的變革，有辦法使用11後，後續升級相對衝擊小很多*
+>java將issue命名為JDK Enhancement Proposals(JEPs)，各issue正式表示方法如JEP-181，<br />
+可以對應到文件https://openjdk.org/jeps/181，確認詳細說明<br />
+以下為列表及簡易說明<br />
+跟一般工程師撰寫比較有關的部分，將以 **粗體** 表示<br />
+**整體來看，JAVA 9, 10, 11是最大的變革，有辦法使用11後，後續升級相對衝擊小很多**<br />
 
 --
 
 
-*181: Nest-Based Access Control*
+**181: Nest-Based Access Control**
 
 <pre>
 	JAVA改變了編譯方式，inner class變可被完整授權
@@ -57,11 +81,11 @@ java將issue命名為JDK Enhancement Proposals(JEPs)，各issue正式表示方�
 	-XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC
 </pre>
 	
-*320: Remove the Java EE and CORBA Modules*
+**320: Remove the Java EE and CORBA Modules**
 	
 <pre>
-	內部 API不開放存取，許尋找新的程式碼使用，或著使用 --add-exports 或 --add-opens 開放
-	減肥，部分Modules拔掉變成三方元件(deprecated: 9, removal: 17)
+	1.內部 API不開放存取，許尋找新的程式碼使用，或著使用 --add-exports 或 --add-opens 開放
+	2.減肥，部分Modules拔掉變成三方元件(deprecated: 9, removal: 17)
 	Removed packages:
 		java.xml.ws (JAX-WS)
 		java.xml.bind (JAXB)
@@ -76,7 +100,7 @@ java將issue命名為JDK Enhancement Proposals(JEPs)，各issue正式表示方�
 		idlj, orbd, servertool, and tnamesrv (from java.corba)
 </pre>
 	
-*321: HTTP Client (Standard)*
+**321: HTTP Client (Standard)**
 	
 <pre>
 	引入新工具java.net.http.*(如java.net.http.HttpClient)!!!!!!!
@@ -105,7 +129,7 @@ java將issue命名為JDK Enhancement Proposals(JEPs)，各issue正式表示方�
 	System.out.println(response.body());
 </pre>
 	
-*323: Local-Variable Syntax for Lambda Parameters*
+**323: Local-Variable Syntax for Lambda Parameters**
 	
 <pre>
 	lambda中的變數類型可使用var(本來就可以指定具體型別如Integer)
@@ -117,7 +141,7 @@ java將issue命名為JDK Enhancement Proposals(JEPs)，各issue正式表示方�
           .collect(Collectors.joining(","));
 </pre>
 	
-*324: Key Agreement with Curve25519 and Curve448*
+**324: Key Agreement with Curve25519 and Curve448**
 	
 <pre>
 	新支援ECDH的加密演算模組，Curve25519 and Curve448
@@ -134,7 +158,7 @@ java將issue命名為JDK Enhancement Proposals(JEPs)，各issue正式表示方�
         PrivateKey privateKey = kp.getPrivate();
 </pre>
 	
-*327: Unicode 10*
+**327: Unicode 10**
 	
 328: Flight Recorder
 	
@@ -158,7 +182,7 @@ java將issue命名為JDK Enhancement Proposals(JEPs)，各issue正式表示方�
 	byte[] encryptedText = cipher.doFinal(pText);
 </pre>
 	
-*330: Launch Single-File Source-Code Programs*
+**330: Launch Single-File Source-Code Programs**
 	
 <pre>
 	javac HelloJava.java
@@ -180,7 +204,7 @@ java將issue命名為JDK Enhancement Proposals(JEPs)，各issue正式表示方�
 	For Virtual Machine Tool Interface (JVMTI) (introduced: 5)
 </pre>
 	
-*332: Transport Layer Security (TLS) 1.3*
+**332: Transport Layer Security (TLS) 1.3**
 	
 <pre>
 	SSLSocketFactory factory =
