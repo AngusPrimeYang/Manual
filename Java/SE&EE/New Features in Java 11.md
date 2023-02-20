@@ -245,8 +245,8 @@ https://endoflife.date/java
 
 reference
 
-https://openjdk.org/projects/jdk/11/
-https://mkyong.com/java/what-is-new-in-java-11/
-https://www.oracle.com/java/technologies/javase/11all-relnotes.html
-https://learn.microsoft.com/zh-tw/java/openjdk/transition-from-java-8-to-java-11
+https://openjdk.org/projects/jdk/11/<br />
+https://mkyong.com/java/what-is-new-in-java-11/<br />
+https://www.oracle.com/java/technologies/javase/11all-relnotes.html<br />
+https://learn.microsoft.com/zh-tw/java/openjdk/transition-from-java-8-to-java-11<br />
 
