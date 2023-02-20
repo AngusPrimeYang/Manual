@@ -3,7 +3,7 @@
 <pre>
 Attachment.cs
         [InverseProperty("AttachmentSnNavigation")]
-        public virtual ICollection<ReviewAttachment> ReviewAttachments { get; set; }
+        public virtual ICollection&lt;ReviewAttachment&gt; ReviewAttachments { get; set; }
         
 ReviewAttachment.cs
         [ForeignKey("AttachmentSn")]
