@@ -56,7 +56,7 @@
 　　4). 承上，如果用builder.Services.AddSingleton<>()，建議改用AddScoped<>()，然後集中管理HttpClient，寫法如下:<br />
 <pre>
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.Configuration.GetValue<string>("AjaxUrl")??"") });
-builder.Services.AddScoped<PostService>();
+builder.Services.AddScoped&lt;PostService&gt;();
 </pre>
 　　5). 承上，其中 builder.Configuration，是透過appsettings.json管理靜態資源(固定值)，請新建在wwwroot下，寫法參照server 端如下:
 <pre>
