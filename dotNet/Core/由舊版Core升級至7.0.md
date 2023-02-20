@@ -23,7 +23,7 @@ builder.Services.AddScoped<PostService>();
 　　5. 承上，其中 builder.Configuration，是透過appsettings.json管理靜態資源(固定值)，請新建在wwwroot下，寫法參照server 端如下:
 <pre>
 {
-  "AjaxUrl": "https://api.revo.org.tw/revotripublic/api/OfficialSite/"
+  "AjaxUrl": "https://target/"
 }
 </pre>
 
