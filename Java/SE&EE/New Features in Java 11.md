@@ -84,8 +84,7 @@ https://endoflife.date/java
 **320: Remove the Java EE and CORBA Modules**
 	
 <pre>
-	1.內部 API不開放存取，許尋找新的程式碼使用，或著使用 --add-exports 或 --add-opens 開放
-	2.減肥，部分Modules拔掉變成三方元件(deprecated: 9, removal: 17)
+	減肥，部分Modules拔掉變成三方元件(deprecated: 9, removal: 17)
 	Removed packages:
 		java.xml.ws (JAX-WS)
 		java.xml.bind (JAXB)
