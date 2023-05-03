@@ -41,6 +41,8 @@ manual for myself
 ### Wildfly
 
 * [wildfly start without setting JAVA_JOME and JBOSS_HOME](https://github.com/AngusPrimeYang/Manual/blob/main/Java/wildfly/wildfly%20start%20without%20setting%20JAVA_JOME%20and%20JBOSS_HOME.md)
+* [wildfly23 and java(8.11.17) migration](https://github.com/AngusPrimeYang/Manual/blob/main/Java/wildfly/wildfly23%20and%20java(8.11.17)%20migration.md)
+* [wildfly24+migration](https://github.com/AngusPrimeYang/Manual/blob/main/Java/wildfly/wildfly24+migration.md)
 
 ## javascript
 
